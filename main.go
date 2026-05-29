@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println("Welcome to the billing system....")
+	fmt.Println()
 	price := 10
 	quantity := 10
 	total := 0
