@@ -30,4 +30,5 @@ func main() {
 	fmt.Println("final Before delivery:", finalBeforedelivery)
 	fmt.Println("Delivery charge:", deliveryCharge)
 	fmt.Println("Payable amount:", payableAmount)
+	fmt.Println("thats all.....")
 }
