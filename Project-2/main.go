@@ -2,14 +2,20 @@ package main
 
 import "fmt"
 
+type car struct {
+	brand string
+	model string
+	year  int
+}
+
 func main() {
-	total := 0
-	marks := []int{80, 90, 70}
-	for i := 0; i < len(marks); i++ {
-		total = total + marks[i]
+	cars := []car{
+		{brand: "Toyota", model: "corolla", year: 2026},
+		{brand: "Honda", model: "Civic", year: 2026},
+		{brand: "BMW", model: "M5", year: 2026},
 	}
-	average := total / len(marks)
-	fmt.Println("Average:", average)
-	fmt.Println("Subject count:", len(marks))
-	fmt.Println("Total marks:", total)
+	for i := 0; i < len(cars); i++ {
+		fmt.Println("Car", i, cars[i])
+	}
+
 }
