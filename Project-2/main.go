@@ -2,20 +2,19 @@ package main
 
 import "fmt"
 
-type car struct {
-	Brand string
-	Model string
-	Year  int
+type Book struct {
+	Title  string
+	Author string
+	Price  int
 }
 
 func main() {
-	cars := []car{
-		{Brand: "Toyota", Model: "corolla", Year: 2026},
-		{Brand: "Honda", Model: "Civic", Year: 2026},
-		{Brand: "BMW", Model: "M5", Year: 2026},
+	books := []Book{
+		{Title: "(Go basics)", Author: "King Shakil", Price: 9999},
+		{Title: "(Rich dad Poor dad)", Author: "Joseph", Price: 7},
+		{Title: "(Human)", Author: "Robiul", Price: 10},
 	}
-	for i := 0; i < len(cars); i++ {
-		fmt.Println(cars[i].Brand, cars[i].Model, cars[i].Year)
+	for i := 0; i < len(books); i++ {
+		fmt.Println(books[i].Title, books[i].Author, books[i].Price)
 	}
-
 }
