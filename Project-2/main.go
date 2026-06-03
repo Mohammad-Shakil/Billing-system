@@ -3,19 +3,19 @@ package main
 import "fmt"
 
 type car struct {
-	brand string
-	model string
-	year  int
+	Brand string
+	Model string
+	Year  int
 }
 
 func main() {
 	cars := []car{
-		{brand: "Toyota", model: "corolla", year: 2026},
-		{brand: "Honda", model: "Civic", year: 2026},
-		{brand: "BMW", model: "M5", year: 2026},
+		{Brand: "Toyota", Model: "corolla", Year: 2026},
+		{Brand: "Honda", Model: "Civic", Year: 2026},
+		{Brand: "BMW", Model: "M5", Year: 2026},
 	}
 	for i := 0; i < len(cars); i++ {
-		fmt.Println("Car", i, cars[i])
+		fmt.Println(cars[i].Brand, cars[i].Model, cars[i].Year)
 	}
 
 }
